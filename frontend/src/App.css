@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    overflow-y: hidden;
+}
+
+.task-list-container {
+    margin: auto;
+    min-width: 830px; 
+    background-color: aqua;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden; 
+   
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    display:flex;
+    align-items: start;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+}
+
+tbody {
+    overflow-y: auto; 
+    max-height: 600px; 
+    display: block;
+}
+
+button.sticky-button {
+    width: 120px;
+    position: sticky;
+    top: -40px;
+    z-index: 1;
+    margin-top: -100px; 
+}
